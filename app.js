@@ -47,12 +47,12 @@ app.post("/multiplefiles", upload.array("files"), function (req, res, next) {
   }
 });
 
-// GET REQUEST EXAMPLE http://localhost:4000/upload/profielfotoNore.jpeg
+
 
 app.get('/upload/:file', function (req, res) {
   var file = req.params.file
 
-      res.sendFile('C:/Users/niels/Desktop/Multer/CustomerMongoDBNode-master/uploads/' + file)
+      res.sendFile('uploads/' + file)
   
 })
 
